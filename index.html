@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Builders | Custom Home Renovations & Contracting</title>
+    <meta name="description" content="Family-owned construction and renovation company providing honest pricing and quality craftsmanship.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer"></script>
+
+
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 10L12 3L21 10M5 10V21H19V10M9 21V14H15V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+                Apex Builders
+            </a>
+
+            <!-- Mobile Menu Checkbox -->
+            <input type="checkbox" id="nav-checkbox">
+            <label for="nav-checkbox" class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#projects">Our Work</a>
+                <a href="#about">About</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#contact" class="nav-actions">
+                    <button class="btn btn-primary" style="padding: 0.5rem 1.25rem;">Get a Free Estimate</button>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1>Building spaces where memories are made.</h1>
+                    <p>Family-owned and operated since 2012. Honest pricing, licensed craftsmanship, and quality work built to last. We don't just build houses, we create homes.</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Our Projects</a>
+                        <a href="#contact" class="btn btn-outline">Call Us Today</a>
+                    </div>
+
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Licensed & Insured
+                        </div>
+                        <div class="trust-item">
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Family-Owned
+                        </div>
+                        <div class="trust-item">
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Free Estimates
+                        </div>
+                        <div class="trust-item">
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Local Experts
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-bg"></div>
+                    <div class="hero-image-frame">
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=1000" alt="Beautifully renovated modern kitchen with warm wood accents">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container services-layout">
+                <div class="services-header">
+                    <h2>What We Build</h2>
+                    <p>From complete home overhauls to custom deck builds, our craftsmanship speaks for itself. We treat every home with the respect it deserves.</p>
+                </div>
+                
+                <div class="service-list">
+                    <article class="service-item">
+                        <div class="service-icon">01</div>
+                        <div class="service-content">
+                            <h3>Custom Home Renovations</h3>
+                            <p>Whole-house transformations that seamlessly blend your home's original character with modern functionality and timeless design.</p>
+                        </div>
+                    </article>
+                    <article class="service-item">
+                        <div class="service-icon">02</div>
+                        <div class="service-content">
+                            <h3>Kitchen Remodeling</h3>
+                            <p>The heart of your home, crafted with precision. Custom cabinetry, beautiful stonework, and layouts designed for real family life.</p>
+                        </div>
+                    </article>
+                    <article class="service-item">
+                        <div class="service-icon">03</div>
+                        <div class="service-content">
+                            <h3>Bathroom Remodeling</h3>
+                            <p>Turn your bathroom into a functional, relaxing retreat with high-quality fixtures, expert tiling, and thoughtful lighting.</p>
+                        </div>
+                    </article>
+                    <article class="service-item">
+                        <div class="service-icon">04</div>
+                        <div class="service-content">
+                            <h3>Decks & Outdoor Living</h3>
+                            <p>Extend your living space outdoors with custom-built decks, pergolas, and patios using premium, weather-resistant materials.</p>
+                        </div>
+                    </article>
+                    <article class="service-item">
+                        <div class="service-icon">05</div>
+                        <div class="service-content">
+                            <h3>General Contracting</h3>
+                            <p>Reliable project management from permits to the final polish. We coordinate the details so you don't have to.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header-center">
+                    <h2>Featured Projects</h2>
+                    <p>Browse a selection of our recent work. Every project represents our commitment to detail, durability, and client satisfaction.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=1000" alt="Bright and spacious custom kitchen remodel">
+                        </div>
+                        <h3>The Maplewood Kitchen</h3>
+                        <p>Complete gut and remodel featuring custom oak cabinetry and structural layout changes.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1000" alt="Modern backyard living space and custom deck">
+                        </div>
+                        <h3>Riverside Outdoor Living</h3>
+                        <p>A multi-level cedar deck built for family gatherings and summer entertaining.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&q=80&w=1000" alt="Elegant master bathroom renovation">
+                        </div>
+                        <h3>Heritage Bath Retreat</h3>
+                        <p>A spa-like master bath featuring walk-in glass shower and artisan tile work.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=1000" alt="Complete exterior home upgrade">
+                        </div>
+                        <h3>Pinecrest Exterior Restoration</h3>
+                        <p>Upgraded siding, custom portico addition, and energy-efficient window installations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container about-grid">
+                <div class="about-images">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=800" alt="Apex Builders team discussing a project" class="about-img-main">
+                    <img src="https://img.magnific.com/premium-photo/carpenter-cutting-wood-tree-with-motor-tools-skill-handmade-furniture_39768-15497.jpg" alt="Close up of wood craftsmanship" class="about-img-accent">
+                </div>
+                
+                <div class="about-content">
+                    <span class="about-badge">The Family Story</span>
+                    <h2>Built on Trust.<br>Crafted with Pride.</h2>
+                    <p>Apex Builders started as a small family business in 2012 with a simple philosophy: treat every client's home as if it were our own.</p>
+                    <p>Over the years, we've grown through word-of-mouth referrals from homeowners who valued our honest pricing, clear communication, and uncompromising quality. We don't cut corners, and we don't make promises we can't keep. When you hire us, you're partnering with local craftsmen who truly care about the final result.</p>
+                    
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <h4>12+</h4>
+                            <p>Years in Business</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>300+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>100%</h4>
+                            <p>Local & Licensed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header-center">
+                    <h2>Word of Mouth</h2>
+                    <p>Our reputation is built on the satisfaction of our neighbors. Here is what local homeowners are saying about their experience with us.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-block">
+                        <div class="quote-mark">“</div>
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">The team completed our deck on time and on budget. Excellent craftsmanship and they left the job site spotless every single day.</p>
+                        <p class="testimonial-author">— Sarah & Michael T.</p>
+                    </div>
+
+                    <div class="testimonial-block">
+                        <div class="quote-mark">“</div>
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">Our kitchen renovation exceeded expectations. Communication was fantastic from start to finish. We always knew what was happening.</p>
+                        <p class="testimonial-author">— David L.</p>
+                    </div>
+
+                    <div class="testimonial-block">
+                        <div class="quote-mark">“</div>
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">Professional, honest, and incredibly easy to work with. They treated our century-old home with the respect it required. Highly recommend.</p>
+                        <p class="testimonial-author">— Emily R.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Estimator Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <h2>Project Estimator</h2>
+                        <p>Select your project type to get a rough estimate, then send us your details to schedule a firm quote.</p>
+                        
+                        <form id="estimator-form" action="#" method="POST" style="margin-top: 2rem;">
+                            
+                            <!-- Step 1: Project Type Cards -->
+                            <div class="form-group">
+                                <label class="form-step-label">1. What do you want to build?</label>
+                                <div class="calc-cards">
+                                    <input type="radio" name="project_type" id="type-kitchen" value="kitchen" checked>
+                                    <label for="type-kitchen" class="calc-card">
+                                        <span class="card-icon-wrapper">
+                                            <svg viewBox="0 0 24 24">
+                                                <!-- Kitchen Cabinets/Oven Icon -->
+                                                <rect x="4" y="3" width="16" height="18" rx="2" />
+                                                <line x1="4" y1="10" x2="20" y2="10" />
+                                                <line x1="12" y1="3" x2="12" y2="21" />
+                                                <circle cx="8" cy="6.5" r="1.5" />
+                                                <circle cx="16" cy="6.5" r="1.5" />
+                                            </svg>
+                                        </span>
+                                        <span class="card-text">Kitchen</span>
+                                    </label>
+
+                                    <input type="radio" name="project_type" id="type-bath" value="bath">
+                                    <label for="type-bath" class="calc-card">
+                                        <span class="card-icon-wrapper">
+                                            <svg viewBox="0 0 24 24">
+                                                <!-- Bathroom/Tub Icon -->
+                                                <path d="M4 12h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2z" />
+                                                <path d="M4 12c0 4.4 3.6 8 8 8s8-3.6 8-8" />
+                                                <path d="M6 20v2M18 20v2" />
+                                            </svg>
+                                        </span>
+                                        <span class="card-text">Bathroom</span>
+                                    </label>
+
+                                    <input type="radio" name="project_type" id="type-deck" value="deck">
+                                    <label for="type-deck" class="calc-card">
+                                        <span class="card-icon-wrapper">
+                                            <svg viewBox="0 0 24 24">
+                                                <!-- Wood Plank/Deck Steps Icon -->
+                                                <rect x="3" y="4" width="18" height="4" rx="1" />
+                                                <rect x="5" y="9" width="14" height="4" rx="1" />
+                                                <rect x="7" y="14" width="10" height="4" rx="1" />
+                                                <line x1="12" y1="18" x2="12" y2="21" />
+                                            </svg>
+                                        </span>
+                                        <span class="card-text">Deck</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Step 2: Scope Selection -->
+                            <div class="form-group">
+                                <label for="project_scope">2. Project Scope</label>
+                                <select id="project_scope" name="project_scope" class="form-control" required>
+                                    <option value="basic">Cosmetic Update (Keep existing layout)</option>
+                                    <option value="full" selected>Full Remodel (New layout, plumbing, electrical)</option>
+                                    <option value="luxury">Luxury/Custom (High-end materials, structural changes)</option>
+                                </select>
+                            </div>
+
+                            <!-- Dynamic Estimate Result Box -->
+                            <div class="estimate-result-box">
+                                <div class="estimate-label">Estimated Investment Range:</div>
+                                <div class="estimate-price" id="estimate-output">$35,000 - $55,000</div>
+                                <div class="estimate-disclaimer">*This is a rough estimate. Final pricing requires a site visit.</div>
+                            </div>
+
+                            <hr class="form-divider">
+
+                            <!-- Step 3: Contact Info -->
+                            <label>3. Request Your Exact Quote</label>
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-control" placeholder="Full Name" required>
+                            </div>
+                            
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                <div class="form-group">
+                                    <input type="tel" id="phone" class="form-control" placeholder="Phone Number" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" class="form-control" placeholder="Email Address" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="message" class="form-control" placeholder="Tell us about your home and your vision..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit">Send Details & Schedule Visit</button>
+                        </form>
+                    </div>
+
+                    <!-- Existing Right Side Info -->
+                    <div class="contact-info">
+                        <!-- Keep your existing map and info-list here -->
+                        <div class="map-wrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="info-list">
+                            <div class="info-item"><h4>Phone</h4><p>(555) 987-6543</p></div>
+                            <div class="info-item"><h4>Email</h4><p>hello@apexbuilders.com</p></div>
+                            <div class="info-item"><h4>Business Hours</h4><p>Mon - Fri: 8:00 AM - 5:00 PM</p></div>
+                            <div class="info-item"><h4>Service Area</h4><p>Serving the Greater County Area</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 10L12 3L21 10M5 10V21H19V10M9 21V14H15V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        </svg>
+                        Apex Builders
+                    </div>
+                    <p>Family-owned construction and renovation experts committed to quality craftsmanship, honest pricing, and building spaces where memories are made.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#projects">Our Work</a></li>
+                        <li><a href="#about">About Our Family</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Kitchens</a></li>
+                        <li><a href="#services">Bathrooms</a></li>
+                        <li><a href="#services">Decks & Patios</a></li>
+                        <li><a href="#services">Renovations</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Get in Touch</h4>
+                    <ul class="footer-links">
+                        <li>(555) 987-6543</li>
+                        <li>hello@apexbuilders.com</li>
+                        <li>123 Craftsman Blvd.<br>Hometown, ST 12345</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Apex Builders. All Rights Reserved. Fully Licensed & Insured.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
