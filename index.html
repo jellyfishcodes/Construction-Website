@@ -324,25 +324,29 @@
                             <hr class="form-divider">
 
                             <!-- Step 3: Contact Info -->
-                            <label>3. Request Your Exact Quote</label>
+                            <label class="form-step-label">3. Request Your Exact Quote</label>
+
+                            <!-- Replace YOUR_ACCESS_KEY_HERE with the key sent to your email by Web3Forms -->
+                            <input type="hidden" name="access_key" value="2b7ac869-7ed1-4bad-a5ca-f1bb944a859d">
+
                             <div class="form-group">
-                                <input type="text" id="name" class="form-control" placeholder="Full Name" required>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Full Name" required>
                             </div>
-                            
+
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
                                 <div class="form-group">
-                                    <input type="tel" id="phone" class="form-control" placeholder="Phone Number" required>
+                                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone Number" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" id="email" class="form-control" placeholder="Email Address" required>
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Email Address" required>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <textarea id="message" class="form-control" placeholder="Tell us about your home and your vision..."></textarea>
+                                <textarea id="message" name="message" class="form-control" placeholder="Tell us about your home and your vision..."></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-primary btn-submit">Send Details & Schedule Visit</button>
+                            <button type="submit" id="submit-btn" class="btn btn-primary btn-submit">Send Details & Schedule Visit</button>
                         </form>
                     </div>
 

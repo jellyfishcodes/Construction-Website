@@ -767,6 +767,58 @@ textarea.form-control {
 }
 
 /* ==========================================================================
+   FORM SUCCESS STATE
+   ========================================================================== */
+.form-success-card {
+    text-align: center;
+    padding: 2.5rem 1.5rem 0rem; /* Natural padding */
+    animation: fadeIn 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.success-icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    background-color: rgba(46, 74, 63, 0.08);
+    color: var(--forest);
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.success-icon-wrapper svg {
+    width: 36px;
+    height: 36px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.form-success-card h3 {
+    color: var(--forest);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.form-success-card p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 480px;
+    margin: 0 auto 1.5rem auto;
+}
+
+.success-metadata {
+    font-size: 0.9rem;
+    color: var(--oak);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ==========================================================================
     FOOTER
     ========================================================================== */
 footer {
