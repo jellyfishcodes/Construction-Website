@@ -2,19 +2,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Pricing database
     const pricingData = {
         kitchen: {
-            basic: "$15,000 - $25,000",
-            full: "$35,000 - $60,000",
-            luxury: "$75,000+"
+            basic: "₹1,50,000 - ₹2,50,000",  // Cosmetic / Modular modular units
+            full: "₹3,50,000 - ₹6,00,000",   // Full remodel, counter tops, chimney & plumbing
+            luxury: "₹7,50,000+"             // Premium Italian finishes, built-in appliances
         },
         bath: {
-            basic: "$8,000 - $15,000",
-            full: "$20,000 - $35,000",
-            luxury: "$45,000+"
+            basic: "₹80,000 - ₹1,50,000",    // Quick sanitaryware update, basic tiling
+            full: "₹2,00,000 - ₹3,50,000",   // Complete waterproof tiling, premium fixtures & shower
+            luxury: "₹5,00,000+"             // Luxury stone cladding, custom vanity & glass enclosures
         },
         deck: {
-            basic: "$5,000 - $12,000",
-            full: "$15,000 - $28,000",
-            luxury: "$35,000+"
+            basic: "₹50,000 - ₹1,00,000",    // Basic terrace tiling / balcony wooden floor
+            full: "₹1,50,000 - ₹3,00,000",   // Quality weather-resistant composite decking & pergola
+            luxury: "₹4,50,000+"             // Large custom outdoor terrace deck with lighting & sit-outs
         }
     };
 
