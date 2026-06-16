@@ -872,30 +872,174 @@ footer {
 }
 
 /* ==========================================================================
-    ANIMATIONS & RESPONSIVE
-    ========================================================================== */
+   ANIMATIONS & RESPONSIVE
+   ========================================================================== */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
+    from { opacity: 0; transform: translateY(15px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* 1. TABLET OPTIMIZATIONS (Max-width: 1024px) */
 @media (max-width: 1024px) {
+    /* Tighten section paddings */
+    .hero { padding: 4rem 0; }
+    .services { padding: 4.5rem 0; }
+    .projects { padding: 5rem 0; }
+    .about { padding: 4.5rem 0; }
+    .testimonials { padding: 5rem 0; }
+    .contact { padding: 4.5rem 0; }
+
+    /* Reduce spacing margins */
+    .section-header-center { margin-bottom: 3.5rem; }
+    
+    /* Close grid gaps */
     .hero-grid, .about-grid { gap: 3rem; }
-    .projects-grid .project-card:nth-child(even) { margin-top: 0; }
-    .projects-grid { gap: 2rem; }
-    .testimonials-grid { grid-template-columns: 1fr; }
-    .contact-grid { padding: 2rem; gap: 3rem; }
+    .projects-grid { gap: 2.5rem; }
+    .services-layout { gap: 2.5rem; }
+    
+    .projects-grid .project-card:nth-child(even) { 
+        margin-top: 0; /* Align projects horizontally on tablet */
+    }
+    
+    .testimonials-grid { 
+        grid-template-columns: repeat(3, 1fr); /* Keep 3 columns on tablet but tighter */
+        gap: 1.5rem; 
+    }
+    
+    .contact-grid { 
+        padding: 2.5rem; 
+        gap: 3rem; 
+    }
 }
 
+/* 2. MOBILE OPTIMIZATIONS (Max-width: 768px) */
 @media (max-width: 768px) {
-    .hero-grid, .services-layout, .about-grid, .projects-grid, .contact-grid, .footer-grid {
+    /* Tighten section paddings significantly for mobile */
+    .hero { padding: 3rem 0; }
+    .services { padding: 3.5rem 0; }
+    .projects { padding: 3.5rem 0; }
+    .about { padding: 3.5rem 0; }
+    .testimonials { padding: 3.5rem 0; }
+    .contact { padding: 3.5rem 0; }
+
+    /* Reduce title space */
+    .section-header-center { margin-bottom: 2.25rem; }
+    h2 { margin-bottom: 1rem; }
+
+    /* Hero section tightening */
+    .hero-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
-    .hero-content { order: 2; }
-    .hero-image-wrapper { order: 1; margin-bottom: 2rem; }
-    .services-header { position: relative; top: 0; margin-bottom: 2rem; }
-    .about-img-accent { width: 40%; }
-    .info-list { grid-template-columns: 1fr; }
-    .hero { padding: 4rem 0; }
-    .hero-buttons { flex-direction: column; }
+    .hero-content { 
+        order: 2; 
+    }
+    .hero-content h1 { 
+        margin-bottom: 1rem; 
+    }
+    .hero-content p { 
+        margin-bottom: 1.75rem; 
+    }
+    .hero-buttons { 
+        margin-bottom: 2rem; 
+    }
+    .hero-image-wrapper { 
+        order: 1; 
+        margin-bottom: 0.5rem; /* Drastically reduces space between image and main header */
+    }
+    .hero-image-bg { 
+        /* Tighter wood border framing offset */
+        top: 1rem; 
+        left: 1rem; 
+        right: -1rem; 
+        bottom: -1rem; 
+    }
+
+    /* Services section tightening */
+    .services-layout { 
+        grid-template-columns: 1fr;
+        gap: 1.5rem; 
+    }
+    .services-header { 
+        position: relative; 
+        top: 0; 
+        margin-bottom: 1rem; 
+    }
+    .service-item { 
+        padding: 1.5rem 0; /* Brings list items closer together */
+    }
+    .service-content h3 { 
+        font-size: 1.3rem; 
+    }
+
+    /* Projects section tightening */
+    .projects-grid { 
+        grid-template-columns: 1fr;
+        gap: 2rem; 
+    }
+    .project-image-wrapper { 
+        margin-bottom: 0.75rem; 
+    }
+
+    /* About section tightening */
+    .about-grid { 
+        grid-template-columns: 1fr;
+        gap: 2.5rem; 
+    }
+    .about-img-accent { 
+        width: 45%; 
+        bottom: -5%;
+        right: -5%;
+    }
+    .stats-row { 
+        margin-top: 1.5rem; 
+        padding-top: 1.5rem; 
+        gap: 1.5rem; 
+    }
+    .stat-item h4 { 
+        font-size: 2rem; 
+    }
+
+    /* Testimonials section tightening */
+    .testimonials-grid { 
+        grid-template-columns: 1fr;
+        gap: 1.25rem; 
+    }
+    .testimonial-block { 
+        padding: 2rem 1.5rem; 
+    }
+    .testimonial-text { 
+        margin-bottom: 1.25rem; 
+        font-size: 1.05rem; 
+    }
+
+    /* Estimator Form tightening */
+    .contact-grid { 
+        grid-template-columns: 1fr;
+        padding: 1.5rem; 
+        gap: 2.5rem; 
+    }
+    .form-group { 
+        margin-bottom: 1.15rem; 
+    }
+    .form-divider { 
+        margin: 1.75rem 0; 
+    }
+    .estimate-result-box { 
+        margin: 1.5rem 0; 
+        padding: 1.25rem; 
+    }
+    .estimate-price { 
+        font-size: 2rem; 
+    }
+
+    /* Footer tightening */
+    footer { 
+        padding: 3.5rem 0 1.5rem 0; 
+    }
+    .footer-grid { 
+        grid-template-columns: 1fr;
+        gap: 2rem; 
+        margin-bottom: 2.5rem; 
+    }
 }
